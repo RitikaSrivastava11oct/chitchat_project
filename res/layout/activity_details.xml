@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/s4"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.chitchat.details">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_details"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/images" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image_details"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/text_fname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="FIRST NAME :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:id="@+id/fname_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Alice"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+
+            <ImageView
+                android:id="@+id/image_pencil_status1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/pencil" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_lname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="LAST NAME :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:id="@+id/lname_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Joe"
+                android:layout_weight="7"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/image_pencil_status2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/pencil" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="STATUS"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:id="@+id/status_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Try ChitChat!!"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+
+
+                />
+
+            <ImageView
+                android:id="@+id/image_pencil_status3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/pencil" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_uname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/l3"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="USERNAME"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_below="@id/text_uname"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:id="@+id/uname_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="alice57"
+                android:layout_weight="7"
+
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/image_pencil_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pencil" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <EditText
+                android:id="@+id/edittext_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:focusable="true"
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image_tick_status"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/tick"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+    <!--   <TextView
+       android:id="@+id/lname_det"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_below="@+id/fname_det"
+       android:layout_margin="25dp" />
+   <TextView
+       android:id="@+id/uname_det"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_below="@+id/lname_det"
+       android:layout_margin="25dp"/>
+   <TextView
+       android:id="@+id/status_det"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_below="@+id/uname_det"
+       android:layout_margin="25dp"/>-->

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/s4"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.chitchat.login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_login"
+        android:text="Login"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textview_login"
+        android:id="@+id/edit_email_login"
+        android:hint="Enter Email"
+        android:textColor="@android:color/black"
+        android:lines="1"
+        android:textColorHint="@android:color/darker_gray"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/edit_password_login"
+        android:lines="1"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/edit_email_login"
+        android:textColorHint="@android:color/darker_gray"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/but_login"
+        android:text="LOGIN"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_password_login"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_below="@+id/but_login"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:id="@+id/but_sign_up"
+        android:text="Click here to register"
+        />
+
+
+</RelativeLayout>
